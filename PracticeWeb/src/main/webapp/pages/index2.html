@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="text-align: center;">
+	<input type="button" value="第二行变蓝色背景" onclick="fun1()" />&#160;&#160;
+	<input type="button" value="第二行第一格绿色背景" onclick="fun2()" />&#160;&#160;
+	<input type="button" value="第五行以后变红色背景" onclick="fun3()" />&#160;&#160;
+	<input type="button" value="奇数行的偶数列变灰色背景" onclick="fun4()" />
+	<br />
+	<br />
+	<div align="center">
+		<table border="1" style="width: 600px; height: 400px;">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<script src="js/jquery-1.10.2.js"></script>
+
+	<script>
+		function fun1() {
+			$("table tr:eq(1)").css("background-color", "blue");
+		}
+
+		function fun2() {
+			$("table tr:eq(1) td:eq(0)").css("background-color", "green");
+		}
+
+		function fun3() {
+			$("table tr:gt(4)").css("background-color", "red");
+		}
+
+		function fun4() {
+			$("table tr:nth-child(odd) > td:nth-child(even)").css(
+					"background-color", "red");
+		}
+	</script>
+</body>
+</html>
