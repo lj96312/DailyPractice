@@ -21,6 +21,11 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17_ch</version>
+		</dependency>
 		<!-- json工具包 -->
 		<dependency>
 			<groupId>net.sf.json-lib</groupId>
@@ -59,7 +64,7 @@
 			<artifactId>jedis</artifactId>
 			<version>2.7.3</version>
 		</dependency>
-
+		<!--redis -->
 		<!--数据库连接 -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -77,6 +82,35 @@
 			<version>4.0</version>
 		</dependency>
 		<!--数据库连接 -->
+		<!--阿里公司数据库开源组件 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.3_own</version>
+		</dependency>
+		<!--阿里公司数据库开源组件 -->
+		<!--spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
+		<!--spring -->
 	</dependencies>
 
 	<build>
