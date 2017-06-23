@@ -47,6 +47,6 @@ public class F9ResourceFilter implements javax.servlet.Filter {
 	}
 
 	private String getWebRootPath() {
-		return "E:\\DailyPractice\\PracticeWeb\\src\\main\\webapp\\";// TODO自行改，或改成动态
+		return "E:\\GithubCode\\DailyPractice\\trunk\\Practice\\src\\main\\webapp\\";// TODO自行改，或改成动态
 	}
 }
