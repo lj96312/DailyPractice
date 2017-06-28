@@ -29,7 +29,7 @@ public class F9ResourceFilter implements javax.servlet.Filter {
 
 		if (!resName.contains(".")) {// 访问资源没有后缀，则表示是页面层
 			String path = Uri.substring(request1.getContextPath().length() + 1);
-			String phiscpath = getWebRootPath() + "pages\\" + path + ".html";
+			String phiscpath = getWebRootPath() + "\\src\\main\\webapp\\pages\\" + path + ".html";
 
 			if (new File(phiscpath).exists()) {
 				String url = "/pages/" + path + ".html";
@@ -47,6 +47,6 @@ public class F9ResourceFilter implements javax.servlet.Filter {
 	}
 
 	private String getWebRootPath() {
-		return "E:\\GithubCode\\DailyPractice\\trunk\\Practice\\src\\main\\webapp\\";// TODO自行改，或改成动态
+		return new File("").getAbsolutePath();// TODO自行改，或改成动态
 	}
 }
